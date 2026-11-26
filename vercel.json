@@ -1,0 +1,4 @@
+{
+  "framework": "hugo",
+  "buildCommand": "hugo --gc --minify"
+}

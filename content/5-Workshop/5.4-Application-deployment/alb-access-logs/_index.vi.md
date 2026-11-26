@@ -1,0 +1,68 @@
+---
+title: "ALB access logs"
+date: 2026-11-15
+weight: 5
+chapter: false
+---
+
+## 1. Cập nhật audit bucket policy
+
+Mở S3 → `<AUDIT_BUCKET_NAME>`.
+
+![Mở audit bucket](/images/5-Workshop/nexusoms/5.4-Application-deployment/alb-access-logs/1-open-audit-bucket.png)
+
+Chọn **Permissions → Bucket policy → Edit**.
+
+![Mở bucket policy](/images/5-Workshop/nexusoms/5.4-Application-deployment/alb-access-logs/2-open-bucket-policy.png)
+
+Giữ nguyên các statement CloudTrail. Thêm object sau vào mảng `Statement`:
+
+```json
+{
+  "Sid": "AllowAlbAccessLogDelivery",
+  "Effect": "Allow",
+  "Principal": {
+    "Service": "logdelivery.elasticloadbalancing.amazonaws.com"
+  },
+  "Action": "s3:PutObject",
+  "Resource": "arn:aws:s3:::<AUDIT_BUCKET_NAME>/alb-access/AWSLogs/<ACCOUNT_ID>/*"
+}
+```
+
+Giữ nguyên hai statement CloudTrail đang có trong bucket policy. Chỉ thêm statement ALB ở trên.
+
+![Thêm ALB log delivery policy](/images/5-Workshop/nexusoms/5.4-Application-deployment/alb-access-logs/3-add-alb-log-delivery-policy.png)
+
+![Cập nhật bucket policy trên giao diện mới](/images/5-Workshop/nexusoms/5.3-Infrastructure/cloudtrail-audit-bucket/8-update-audit-bucket-policy.png)
+
+## 2. Bật access logs
+
+Mở EC2 → **Load balancers → nexusoms-demo-alb → Attributes → Edit**.
+
+![Mở ALB attributes](/images/5-Workshop/nexusoms/5.4-Application-deployment/alb-access-logs/4-open-alb-attributes.png)
+
+![Mở ALB attributes trên giao diện mới](/images/5-Workshop/nexusoms/5.4-Application-deployment/alb-access-logs/1-open-alb-attributes.png)
+
+```text
+Logging → Access logs: Enabled
+S3 URI: s3://<AUDIT_BUCKET_NAME>/alb-access
+```
+
+Chọn **Save changes**.
+
+![Bật ALB access logs](/images/5-Workshop/nexusoms/5.4-Application-deployment/alb-access-logs/5-enable-alb-access-logs.png)
+
+Kiểm tra bucket xuất hiện:
+
+```text
+alb-access/AWSLogs/<ACCOUNT_ID>/ELBAccessLogTestFile
+```
+
+Gửi một request API qua CloudFront, chờ vài phút rồi kiểm tra tiếp file có đuôi `.log.gz` trong cùng prefix. `ELBAccessLogTestFile` chỉ xác nhận ALB có quyền ghi; file `.log.gz` mới chứa request thực tế.
+
+Nếu ALB báo `Access Denied`, kiểm tra:
+
+- ALB và S3 bucket cùng Region `ap-southeast-1`.
+- Bucket dùng SSE-S3 và vẫn bật Block Public Access.
+- Prefix là `alb-access`.
+- Policy vẫn giữ các statement CloudTrail.

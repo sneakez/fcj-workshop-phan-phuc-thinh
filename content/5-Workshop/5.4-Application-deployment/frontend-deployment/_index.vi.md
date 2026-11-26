@@ -1,0 +1,75 @@
+---
+title: "Build và upload frontend"
+date: 2026-11-15
+weight: 10
+chapter: false
+---
+
+Mở PowerShell tại thư mục gốc của repository.
+
+Phân biệt hai giá trị CloudFront:
+
+| Giá trị | Ví dụ | Dùng cho |
+| --- | --- | --- |
+| Domain | `d....cloudfront.net` | `VITE_API_BASE_URL` |
+| Distribution ID | `E...` | Lệnh invalidation |
+
+Kiểm tra file cấu hình local được Git bỏ qua:
+
+```powershell
+git check-ignore frontend/.env.production.local
+```
+
+## 1. Build frontend
+
+```powershell
+$CloudFrontDomain = "<CLOUDFRONT_DOMAIN>"
+$ProjectRef = "<PROJECT_REF>"
+$SupabaseAnonKey = "<SUPABASE_PUBLISHABLE_OR_ANON_KEY>"
+
+Push-Location frontend
+$env:VITE_DATA_MODE = "supabase"
+$env:VITE_API_BASE_URL = "https://$CloudFrontDomain"
+$env:VITE_SUPABASE_URL = "https://$ProjectRef.supabase.co"
+$env:VITE_SUPABASE_ANON_KEY = $SupabaseAnonKey
+
+npm ci
+npm run typecheck
+npm run test
+npm run build
+```
+
+Chỉ dùng Supabase publishable/anon key cho biến `VITE_`. Không dùng service-role hoặc secret key.
+
+![Cấu hình biến và build frontend](/images/5-Workshop/nexusoms/5.4-Application-deployment/frontend-deployment/1-set-up-variable-run-build-project.png)
+
+## 2. Upload lên S3
+
+```powershell
+$AccountId = aws sts get-caller-identity `
+  --profile nexusoms-demo `
+  --query Account `
+  --output text
+$BucketName = "nexusoms-demo-frontend-$AccountId"
+
+aws s3 sync .\dist "s3://$BucketName" `
+  --delete `
+  --profile nexusoms-demo `
+  --region ap-southeast-1
+```
+
+![Upload frontend lên S3](/images/5-Workshop/nexusoms/5.4-Application-deployment/frontend-deployment/2-push-to-s3.png)
+
+## 3. Tạo CloudFront invalidation
+
+```powershell
+$DistributionId = "<CLOUDFRONT_DISTRIBUTION_ID>"
+$InvalidationId = aws cloudfront create-invalidation --distribution-id $DistributionId --paths "/*" --profile nexusoms-demo --query "Invalidation.Id" --output text
+aws cloudfront wait invalidation-completed --distribution-id $DistributionId --id $InvalidationId --profile nexusoms-demo
+
+Pop-Location
+```
+
+Chỉ tiếp tục khi lệnh wait kết thúc thành công.
+
+![Tạo CloudFront invalidation](/images/5-Workshop/nexusoms/5.4-Application-deployment/frontend-deployment/3-create-invalidation-cloudfront.png)
