@@ -1,31 +1,29 @@
 ---
-title: "Week 11 Worklog"
+title: "Worklog Week 11"
 date: 2026-11-22
 weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
 
-### Week 11 objectives
+### Week 11 goals
 
-* Review the NexusOMS deployment guide against evidence from the actual deployment.
-* Clean up the AWS lab environment and record the result to reduce the risk of unexpected charges.
-* Turn the accumulated project experience into reusable learning material.
-* Convert the most valuable technical lessons into community-ready articles.
+* Review the NexusOMS documentation against the work I actually completed.
+* Remove unused AWS resources to avoid unexpected charges.
+* Organize my notes and finish the internship report.
 
-### Tasks completed
+### Work completed
 
-| Day | Task | Start Date | Completion Date | Reference / Evidence |
+| Day | Work | Start date | Completion date | Reference |
 | --- | --- | --- | --- | --- |
-| Sunday | - Compared the NexusOMS deployment guide with the issues encountered across ECS, IAM, ECR, CloudFront, SQS, and GitHub Actions. <br> - Classified direct errors, missing steps, unverified claims, and acceptance criteria. <br> - Refined guidance for PowerShell, Secrets Manager, OIDC, rollback, and cleanup. | 22/11/2026 | 22/11/2026 | NexusOMS deployment-document review |
-| Monday | - Inventoried and cleaned up resources in the AWS demo environment. <br> - Checked dependencies before removing ECS, ALB, NAT Gateway, Elastic IP, VPC, and related resources. <br> - Preserved cleanup evidence and documented resources intentionally retained. | 23/11/2026 | 23/11/2026 | AWS cleanup evidence package |
-| Tuesday | - Built a learning pack containing a knowledge map, a rebuild roadmap, a critique of the original material, and guidance for learning code with Gemini. <br> - Wrote five community articles on ECS IAM, GitHub OIDC, S3/CloudFront, NAT Gateway/S3 Endpoint, and idempotency. <br> - Prepared diagrams, HTML/PDF editions, and individual publication packages. | 24/11/2026 | 24/11/2026 | Learning pack and five AWS articles |
-| Wednesday | - Performed the final bilingual review of the internship report, Worklog, Events, Self-evaluation, and Sharing & Feedback. <br> - Removed template data, updated personal information, checked links, and reviewed the Vercel deployment configuration. <br> - Prepared a personal repository for the final submission. | 25/11/2026 | 25/11/2026 | Internship-report repository |
+| Sunday | - Reviewed the NexusOMS deployment guide. <br> - Added notes about issues encountered with ECS, IAM, ECR, CloudFront, SQS and GitHub Actions. <br> - Corrected the PowerShell, Secrets Manager, OIDC, rollback and cleanup sections. | 22/11/2026 | 22/11/2026 | NexusOMS documentation |
+| Monday | - Checked the resources still running in my AWS account. <br> - Removed unused ECS, ALB, NAT Gateway, Elastic IP, VPC and related resources. <br> - Checked the account again to reduce the risk of charges after the demo. | 23/11/2026 | 23/11/2026 | AWS Console and billing page |
+| Tuesday | - Organized review notes from the NexusOMS project. <br> - Drafted five short articles about ECS IAM, GitHub OIDC, S3/CloudFront, NAT Gateway/S3 Endpoint and idempotency. <br> - Used Gemini to help with research and wording, then checked the technical details against AWS documentation. | 24/11/2026 | 24/11/2026 | AWS documentation and personal notes |
+| Wednesday | - Reviewed the Worklog, Events, Self-Evaluation and Sharing & Feedback sections. <br> - Updated personal information, photo, links and bilingual content. <br> - Prepared a personal repository and the Vercel deployment configuration. | 25/11/2026 | 25/11/2026 | Internship report repository |
 
-### Week 11 achievements
+### Week 11 results
 
-* Completed an evidence-based deployment review with actionable corrections, missing steps, and acceptance criteria.
-* Cleaned up the AWS lab environment in a controlled manner and retained evidence for cost verification.
-* Produced a structured NexusOMS learning pack covering foundations through deployment operations.
-* Completed five illustrated technical articles based on the most important lessons from the project.
-* Finalized the bilingual internship report and prepared it for public deployment on Vercel.
+* Updated the NexusOMS documentation to match the actual deployment work.
+* Checked and removed AWS resources used for the demo.
+* Organized review notes and drafted the technical articles.
+* Reviewed the bilingual internship report for submission.

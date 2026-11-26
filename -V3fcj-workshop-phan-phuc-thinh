@@ -1,0 +1,82 @@
+warning: in the working copy of 'content/1-Worklog/1.11-Week11/_index.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'content/1-Worklog/1.11-Week11/_index.vi.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'content/6-Self-evaluation/_index.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'content/6-Self-evaluation/_index.vi.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'content/7-Feedback/_index.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'content/7-Feedback/_index.vi.md', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/content/1-Worklog/1.11-Week11/_index.md b/content/1-Worklog/1.11-Week11/_index.md[m
+[1mindex ad9e671..6dce0e7 100644[m
+[1m--- a/content/1-Worklog/1.11-Week11/_index.md[m
+[1m+++ b/content/1-Worklog/1.11-Week11/_index.md[m
+[36m@@ -1,31 +1,29 @@[m
+ ---[m
+[31m-title: "Week 11 Worklog"[m
+[32m+[m[32mtitle: "Worklog Week 11"[m
+ date: 2026-11-22[m
+ weight: 11[m
+ chapter: false[m
+ pre: " <b> 1.11. </b> "[m
+ ---[m
+ [m
+[31m-### Week 11 objectives[m
+[32m+[m[32m### Week 11 goals[m
+ [m
+[31m-* Review the NexusOMS deployment guide against evidence from the actual deployment.[m
+[31m-* Clean up the AWS lab environment and record the result to reduce the risk of unexpected charges.[m
+[31m-* Turn the accumulated project experience into reusable learning material.[m
+[31m-* Convert the most valuable technical lessons into community-ready articles.[m
+[32m+[m[32m* Review the NexusOMS documentation against the work I actually completed.[m
+[32m+[m[32m* Remove unused AWS resources to avoid unexpected charges.[m
+[32m+[m[32m* Organize my notes and finish the internship report.[m
+ [m
+[31m-### Tasks completed[m
+[32m+[m[32m### Work completed[m
+ [m
+[31m-| Day | Task | Start Date | Completion Date | Reference / Evidence |[m
+[32m+[m[32m| Day | Work | Start date | Completion date | Reference |[m
+ | --- | --- | --- | --- | --- |[m
+[31m-| Sunday | - Compared the NexusOMS deployment guide with the issues encountered across ECS, IAM, ECR, CloudFront, SQS, and GitHub Actions. <br> - Classified direct errors, missing steps, unverified claims, and acceptance criteria. <br> - Refined guidance for PowerShell, Secrets Manager, OIDC, rollback, and cleanup. | 22/11/2026 | 22/11/2026 | NexusOMS deployment-document review |[m
+[31m-| Monday | - Inventoried and cleaned up resources in the AWS demo environment. <br> - Checked dependencies before removing ECS, ALB, NAT Gateway, Elastic IP, VPC, and related resources. <br> - Preserved cleanup evidence and documented resources intentionally retained. | 23/11/2026 | 23/11/2026 | AWS cleanup evidence package |[m
+[31m-| Tuesday | - Built a learning pack containing a knowledge map, a rebuild roadmap, a critique of the original material, and guidance for learning code with Gemini. <br> - Wrote five community articles on ECS IAM, GitHub OIDC, S3/CloudFront, NAT Gateway/S3 Endpoint, and idempotency. <br> - Prepared diagrams, HTML/PDF editions, and individual publication packages. | 24/11/2026 | 24/11/2026 | Learning pack and five AWS articles |[m
+[31m-| Wednesday | - Performed the final bilingual review of the internship report, Worklog, Events, Self-evaluation, and Sharing & Feedback. <br> - Removed template data, updated personal information, checked links, and reviewed the Vercel deployment configuration. <br> - Prepared a personal repository for the final submission. | 25/11/2026 | 25/11/2026 | Internship-report repository |[m
+[32m+[m[32m| Sunday | - Reviewed the NexusOMS deployment guide. <br> - Added notes about issues encountered with ECS, IAM, ECR, CloudFront, SQS and GitHub Actions. <br> - Corrected the PowerShell, Secrets Manager, OIDC, rollback and cleanup sections. | 22/11/2026 | 22/11/2026 | NexusOMS documentation |[m
+[32m+[m[32m| Monday | - Checked the resources still running in my AWS account. <br> - Removed unused ECS, ALB, NAT Gateway, Elastic IP, VPC and related resources. <br> - Checked the account again to reduce the risk of charges after the demo. | 23/11/2026 | 23/11/2026 | AWS Console and billing page |[m
+[32m+[m[32m| Tuesday | - Organized review notes from the NexusOMS project. <br> - Drafted five short articles about ECS IAM, GitHub OIDC, S3/CloudFront, NAT Gateway/S3 Endpoint and idempotency. <br> - Used Gemini to help with research and wording, then checked the technical details against AWS documentation. | 24/11/2026 | 24/11/2026 | AWS documentation and personal notes |[m
+[32m+[m[32m| Wednesday | - Reviewed the Worklog, Events, Self-Evaluation and Sharing & Feedback sections. <br> - Updated personal information, photo, links and bilingual content. <br> - Prepared a personal repository and the Vercel deployment configuration. | 25/11/2026 | 25/11/2026 | Internship report repository |[m
+ [m
+[31m-### Week 11 achievements[m
+[32m+[m[32m### Week 11 results[m
+ [m
+[31m-* Completed an evidence-based deployment review with actionable corrections, missing steps, and acceptance criteria.[m
+[31m-* Cleaned up the AWS lab environment in a controlled manner and retained evidence for cost verification.[m
+[31m-* Produced a structured NexusOMS learning pack covering foundations through deployment operations.[m
+[31m-* Completed five illustrated technical articles based on the most important lessons from the project.[m
+[31m-* Finalized the bilingual internship report and prepared it for public deployment on Vercel.[m
+[32m+[m[32m* Updated the NexusOMS documentation to match the actual deployment work.[m
+[32m+[m[32m* Checked and removed AWS resources used for the demo.[m
+[32m+[m[32m* Organized review notes and drafted the technical articles.[m
+[32m+[m[32m* Reviewed the bilingual internship report for submission.[m
+[1mdiff --git a/content/1-Worklog/1.11-Week11/_index.vi.md b/content/1-Worklog/1.11-Week11/_index.vi.md[m
+[1mindex 812435a..83ce6ed 100644[m
+[1m--- a/content/1-Worklog/1.11-Week11/_index.vi.md[m
+[1m+++ b/content/1-Worklog/1.11-Week11/_index.vi.md[m
+[36m@@ -8,24 +8,22 @@[m [mpre: " <b> 1.11. </b> "[m
+ [m
+ ### Mục tiêu tuần 11[m
+ [m
+[31m-* Rà soát lại tài liệu triển khai NexusOMS dựa trên bằng chứng từ lần triển khai thực tế.[m
+[31m-* Dọn dẹp tài nguyên AWS của môi trường lab và ghi nhận kết quả để tránh phát sinh chi phí ngoài dự kiến.[m
+[31m-* Hệ thống hóa kiến thức đã học thành tài liệu có thể tái sử dụng.[m
+[31m-* Chuyển các bài học kỹ thuật nổi bật thành nội dung chia sẻ cho cộng đồng.[m
+[32m+[m[32m* Kiểm tra lại tài liệu NexusOMS theo những gì đã làm thực tế.[m
+[32m+[m[32m* Xóa các tài nguyên AWS không còn sử dụng để tránh phát sinh chi phí.[m
+[32m+[m[32m* Tổng hợp kiến thức và hoàn thiện báo cáo thực tập.[m
+ [m
+[31m-### Các công việc đã triển khai[m
+[32m+[m[32m### Các công việc đã thực hiện[m
+ [m
+[31m-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu / minh chứng |[m
+[32m+[m[32m| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu |[m
+ | --- | --- | --- | --- | --- |[m
+[31m-| Chủ nhật | - Đối chiếu tài liệu triển khai NexusOMS với các lỗi thực tế đã gặp trên ECS, IAM, ECR, CloudFront, SQS và GitHub Actions. <br> - Phân loại lỗi cần sửa, bước còn thiếu, nội dung chưa được kiểm chứng và điều kiện nghiệm thu workshop. <br> - Chuẩn hóa khuyến nghị về PowerShell, Secrets Manager, OIDC, rollback và cleanup. | 22/11/2026 | 22/11/2026 | Báo cáo rà soát tài liệu triển khai NexusOMS |[m
+[31m-| Thứ 2 | - Kiểm kê và dọn dẹp tài nguyên AWS của môi trường demo. <br> - Kiểm tra dependency trước khi xóa ECS, ALB, NAT Gateway, Elastic IP, VPC và các tài ng

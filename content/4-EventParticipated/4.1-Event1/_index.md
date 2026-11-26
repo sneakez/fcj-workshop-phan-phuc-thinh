@@ -6,72 +6,24 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Summary Report: "Buildathon Kickoff: Code the Future with CMC Global"
+# Buildathon Kickoff: Code the Future with CMC Global
 
-### Event Objectives
+### What I noted
 
-- Officially kickoff the Buildathon program, introducing the challenge, event objectives, and evaluation criteria.
-- Provide guidance on learning mindsets and insights into the current Cloud & AI hiring market.
-- Share real-world case studies on adopting Generative AI and building modern AI Agents within enterprises.
-- Connect participants and help them navigate their career paths with AWS Cloud and AI technologies.
+The session introduced the Buildathon format, participation rules and evaluation criteria. The main point I took from Hung Gia's talk was that completing labs is only the first step. For a project, I also need to explain the problem, the design and why a solution was selected.
 
-### Speakers
+I was most interested in Truong Bui's example of an internal chatbot at CMC Global. Because the business team in Australia and the engineering team in Vietnam work in different time zones, the chatbot helps collect issue details and pass clearer information to the developers. This showed me a practical use of AI for a specific business problem instead of a general question-and-answer tool.
 
-- **Thien Lu** – Program Manager FCAJ (Host & Program Introduction)
-- **Hung Gia** – Head of Solutions Architect (Buildathon Direction & Recruitment Market Insights)
-- **Truong Bui** – Tech Lead CMC Global (Case Study: Developing Internal AI Chatbots)
+### What I learned
 
----
+* Start with the real problem instead of choosing a technology first.
+* Understand the data flow and troubleshooting steps, not only whether the application runs.
+* Communication and presentation skills are important alongside technical skills.
 
-### Key Highlights
+I later applied this approach to NexusOMS by defining the main business flow before choosing the AWS services.
 
-#### 1. Buildathon Overview & Strategic Direction (Thien Lu & Hung Gia)
+### Attendance evidence
 
-- **Introduction:** Thien Lu kicked off the session by introducing the agenda and featured speakers.
-- **Buildathon Program Insights:** Hung Gia (Head of Solutions Architect) shared the history, format, and key milestones achieved through the Buildathon program.
-- **Learning Mindset & Career Guidance:**
-  - Updated participants on current hiring trends in the Cloud & AI industry.
-  - Emphasized key learning mindsets: Avoid simply "grinding through hands-on labs" without understanding architectural principles, real-world business problems, and essential soft skills.
+The attendance application had a technical problem during the event, so I used the participation image accepted by the program.
 
-#### 2. Real-World Case Study: Building an Internal AI Chatbot (Truong Bui)
-
-- **Business Challenge:** Time zone differences between the VN-based engineering team and the Australia-based business team caused delays. Issues raised by the business team outside VN working hours required long wait times for resolution.
-- **AI Solution:** Truong Bui designed an internal AI Chatbot to automatically collect, detail, and structure issues from the business team, sending comprehensive reports directly to developers without requiring synchronous communication.
-- **Architecture & Troubleshooting:**
-  - Detailed the underlying system architecture of the Chatbot.
-  - Demonstrated real-world troubleshooting techniques, such as establishing internal APIs between the bot scheduler, Cron jobs, and the database.
-- **Q&A Session:** Addressed technical questions regarding the AI Chatbot project and its implementation on AWS.
-
----
-
-### Key Takeaways
-
-#### 1. Mindset & Program Alignment
-
-- Re-aligned goals and consolidated perspectives on the Buildathon journey, despite having started two weeks prior.
-- Reinforced the importance of adopting a product-oriented mindset rather than focusing solely on completing technical labs.
-
-#### 2. Practical Technical Knowledge
-
-- Learned how to leverage AI / AI Agents to solve real-world operational challenges like cross-timezone communication.
-- Understood how to combine core cloud components (Internal APIs, Cron Jobs, Databases) with AI models to build automated workflows.
-
----
-
-### Applying to Work
-
-- **Align with Buildathon Roadmap:** Continue executing AWS hands-on labs while keeping architectural concepts and practical use cases in mind.
-- **Enhance Problem-Solving Approach:** Apply AI Agent and Chatbot patterns when working on major projects or proposing workflow optimizations.
-- **Develop Career-Ready Skills:** Actively engage with the community and prepare relevant technical/soft skills aligned with enterprise hiring expectations.
-
----
-
-### Event Experience & Attendance Proof
-
-Attending the **"Buildathon Kickoff: Code the Future with CMC Global"** event was highly valuable. It strengthened my understanding of the Buildathon path and provided practical insights into deploying AI solutions in production environments.
-
-_Due to a technical glitch with the check-in app during the event, the screenshot below serves as proof of attendance as instructed:_
-
-![Buildathon Kickoff Attendance Proof](/images/4-Event/buildathon-kickoff.jpg)
-
-> _Figure 1: Screenshot confirming attendance at the "Buildathon Kickoff: Code the Future with CMC Global" event._
+![Buildathon Kickoff attendance evidence](/images/4-Event/buildathon-kickoff.jpg)

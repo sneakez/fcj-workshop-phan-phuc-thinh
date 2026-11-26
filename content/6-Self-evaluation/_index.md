@@ -6,40 +6,38 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During the **First Cloud AI Journey** program, I used NexusOMS as a continuous project instead of treating each lab as an isolated task. This helped me connect Software Engineering knowledge with AWS—from business analysis, data design, frontend and API development to testing, containerization, deployment, observability, and cost control.
-
-The greatest challenge was not creating individual resources, but making the complete workflow verifiable. I had to inspect logs, correlate ECS and ALB states, validate IAM permissions, handle secrets, repair the GitHub Actions/OIDC pipeline, verify webhook/SQS idempotency, and remove resources in dependency order. At the end of the program, I reviewed the deployment material, built a learning pack, and converted key lessons into community articles.
+During First Cloud AI Journey, I used NexusOMS to practice what I learned. I worked on business analysis, data design and application development, then Docker packaging, AWS deployment and troubleshooting. I completed the main work, but some parts required several attempts and still need more study.
 
 ### Self-evaluation results
 
-| No. | Criteria | Evidence | Good | Fair | Average |
-| --- | --- | --- | --- | --- | --- |
-| 1 | **Professional knowledge and skills** | Connected React/Vite, .NET, PostgreSQL, Docker, and multiple AWS services in one business workflow | ☐ | ✅ | ☐ |
-| 2 | **Ability to learn** | Proactively studied official documentation, practiced, recorded failures, and refined the approach | ✅ | ☐ | ☐ |
-| 3 | **Proactiveness** | Formed hypotheses, inspected logs, and experimented before requesting support | ✅ | ☐ | ☐ |
-| 4 | **Responsibility** | Followed work through verification, retained evidence, and cleaned up resources | ✅ | ☐ | ☐ |
-| 5 | **Discipline** | Maintained progress for 11 weeks, although some work required repeated revisions because tasks were not divided finely enough | ☐ | ✅ | ☐ |
-| 6 | **Growth mindset** | Accepted critique and revised the code, architecture, documentation, and presentation | ✅ | ☐ | ☐ |
-| 7 | **Communication** | Reported issues using logs, resource state, and test results instead of symptoms alone | ☐ | ✅ | ☐ |
-| 8 | **Collaboration** | Exchanged information with administrators and community members and used their feedback for further investigation | ☐ | ✅ | ☐ |
-| 9 | **Professional conduct** | Respected shared processes, protected secrets, and distinguished verified from unverified claims | ✅ | ☐ | ☐ |
-| 10 | **Problem solving** | Investigated problems across application, CI/CD, and infrastructure layers | ✅ | ☐ | ☐ |
-| 11 | **Project contribution** | Produced the NexusOMS demo, bilingual workshop, learning pack, and five technical articles | ✅ | ☐ | ☐ |
-| 12 | **Overall assessment** | Met the learning goals and produced demonstrable software, documentation, and evidence | ✅ | ☐ | ☐ |
+| No. | Criterion | Reason | Rating |
+| --- | --- | --- | --- |
+| 1 | **Professional knowledge and skills** | Connected React, .NET, PostgreSQL, Docker and AWS services, but my knowledge of some areas is not yet deep | Fair |
+| 2 | **Learning ability** | Read documentation, practiced and recorded issues for later correction | Good |
+| 3 | **Proactiveness** | Usually checked logs and tried possible fixes before asking for help | Good |
+| 4 | **Responsibility** | Followed tasks through verification and cleaned up resources after the demo | Good |
+| 5 | **Discipline** | Completed all 11 weeks, although some work was left until late in the program | Fair |
+| 6 | **Willingness to improve** | Revised code and documentation after receiving feedback | Good |
+| 7 | **Communication** | Can describe issues using logs and system status, but need to be more concise | Fair |
+| 8 | **Collaboration** | Discussed problems with program admins and community members | Fair |
+| 9 | **Professional conduct** | Paid attention to secrets and followed the program process | Good |
+| 10 | **Problem solving** | Resolved issues across the application, CI/CD and infrastructure | Good |
+| 11 | **Project contribution** | Completed the NexusOMS demo and bilingual workshop documentation | Good |
+| 12 | **Overall evaluation** | Completed the main goals and produced a project that can be presented | Good |
 
 ### Strengths
 
-- Persistently investigates issues using evidence across multiple system layers.
-- Organizes a large amount of work into clear checklists, documentation, and demo flows.
-- Considers business correctness, secret handling, rollback, and post-deployment cost.
+* Persistent when troubleshooting and able to use logs.
+* Records the steps taken during implementation.
+* Pays attention to cost, secrets and AWS resource cleanup.
 
-### Areas for improvement
+### Areas to improve
 
-- Divide scope and define completion criteria earlier to reduce late revision cycles.
-- Strengthen .NET, PostgreSQL, and testing fundamentals to reduce trial-and-error.
-- Study AWS Security, observability, genuine multi-AZ design, and production cost optimization in greater depth.
-- Communicate technical issues more concisely using context, evidence, root cause, and decision.
+* Break work into smaller tasks to avoid a rush near the end.
+* Strengthen .NET, PostgreSQL and automated testing skills.
+* Study AWS security, monitoring and cost optimization in more depth.
+* Explain technical problems more clearly and concisely.
 
 ### Conclusion
 
-I do not consider NexusOMS a complete production product, but it taught me to approach deployment as a verifiable process: define scope, measure results, document limitations, and clean up after experiments. That is my most important improvement from the program and the foundation for my next learning stage.
+I rated my overall performance as Good because I completed the project and report goals. However, NexusOMS is still a learning project rather than a production product. I need to strengthen the fundamentals and build more small projects to improve the areas where I am still weak.

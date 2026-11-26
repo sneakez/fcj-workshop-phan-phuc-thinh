@@ -6,44 +6,39 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-Phần này tổng hợp trải nghiệm cá nhân và các đề xuất của tôi sau khi tham gia **First Cloud AI Journey** tại văn phòng AWS.
+### Trải nghiệm của tôi
 
-### Trải nghiệm học tập
+Điều tôi thích ở First Cloud AI Journey là được tự chọn đề tài và tự chịu trách nhiệm về tiến độ. Khi làm NexusOMS, tôi không chỉ viết code mà còn phải tìm hiểu Docker, IAM, ECS, S3, CloudFront, SQS và cách theo dõi lỗi trên AWS.
 
-Điểm có giá trị nhất của chương trình là môi trường khuyến khích học viên tự nghiên cứu và chịu trách nhiệm với kết quả. Tôi không chỉ làm theo hướng dẫn mà phải đọc tài liệu, kiểm tra trạng thái thực tế, giải thích vì sao một cấu hình hoạt động hoặc thất bại và tự hoàn thiện sản phẩm cá nhân.
+Phần khó nhất là khi ứng dụng chạy được ở máy cá nhân nhưng gặp lỗi sau khi triển khai. Tôi phải kiểm tra nhiều chỗ như Docker image, biến môi trường, quyền IAM, health check và log. Quá trình này mất nhiều thời gian nhưng giúp tôi hiểu rõ hơn mối liên hệ giữa ứng dụng và hạ tầng.
 
-NexusOMS giúp tôi nhìn thấy mối liên hệ giữa code và hạ tầng. Một thay đổi nhỏ ở Docker image, IAM policy, connection string hoặc CloudFront behavior đều có thể ảnh hưởng đến toàn bộ luồng. Việc phải triển khai, quan sát, sửa lỗi, rollback và cleanup khiến kiến thức về ECS Fargate, ECR, S3, CloudFront, SQS, CloudWatch, CloudTrail, Secrets Manager và GitHub OIDC trở nên cụ thể hơn nhiều so với khi chỉ đọc lý thuyết.
+Tôi đã tham gia hai sự kiện đầu tiên của chương trình. Buổi Buildathon Kickoff giúp tôi chú ý hơn đến bài toán thực tế của dự án. Buổi AWS Cloud Day and AI Day giúp tôi hiểu thêm về dữ liệu, bảo mật, chi phí và cách doanh nghiệp ứng dụng Cloud/AI.
 
-### Sự hỗ trợ và cộng đồng
+### Điều tôi nhận được
 
-Các admin và thành viên cộng đồng đã cho tôi thêm góc nhìn khi gặp vấn đề khó. Cách hỗ trợ hiệu quả nhất là gợi ý hướng kiểm tra hoặc đặt câu hỏi phản biện, để tôi tự tìm ra nguyên nhân và ghi lại bài học. Hai sự kiện đã tham gia giúp tôi hiểu rõ hơn tư duy phát triển sản phẩm, xu hướng Cloud & AI, mức độ sẵn sàng của dữ liệu và yêu cầu vận hành hệ thống thực tế.
+* Có kinh nghiệm triển khai một ứng dụng lên AWS thay vì chỉ làm từng lab riêng lẻ.
+* Biết sử dụng log và trạng thái tài nguyên để tìm lỗi.
+* Hiểu rõ hơn về việc quản lý secret, quyền IAM và chi phí.
+* Hoàn thành tài liệu workshop song ngữ để có thể tự làm lại sau này.
 
-### Điều tôi hài lòng nhất
+### Khó khăn
 
-- Được tự chọn bài toán NexusOMS và phát triển nó qua nhiều vòng từ nghiệp vụ đến hạ tầng.
-- Được trải nghiệm một quy trình gần với thực tế: test, container, CI/CD, deploy, quan sát, xử lý lỗi và cleanup.
-- Có đủ bằng chứng để nhìn lại phần nào đã làm được, phần nào mới là thiết kế mục tiêu và phần nào cần học tiếp.
-- Chuyển kinh nghiệm cá nhân thành workshop song ngữ, learning pack và các bài viết có thể chia sẻ lại.
+* Một số bài lab và hình hướng dẫn không còn giống giao diện AWS hiện tại.
+* Lỗi thường liên quan đến nhiều dịch vụ nên khó xác định nguyên nhân.
+* Một số phần của dự án khá lớn, khiến công việc bị dồn vào cuối chương trình.
+* Nếu không chú ý, tài nguyên AWS có thể tiếp tục phát sinh chi phí sau khi thực hành.
 
-### Khó khăn ghi nhận
+### Góp ý cho chương trình
 
-- Một số lab, repository và ảnh hướng dẫn không còn khớp với giao diện hoặc hành vi hiện tại của dịch vụ.
-- Nhiều lỗi triển khai xuất hiện ở ranh giới giữa các dịch vụ nên khó tìm nguyên nhân nếu không có checkpoint rõ ràng.
-- Chi phí cloud, secret, quyền IAM và thứ tự cleanup dễ bị xem nhẹ khi người học tập trung vào mục tiêu “chạy được”.
-- Các mốc review chưa cố định khiến việc chuẩn bị nội dung và phân bổ thời gian đôi lúc bị dồn vào cuối kỳ.
-
-### Đề xuất cải thiện
-
-- Phiên bản hóa lab theo ngày kiểm chứng, repository/tag/commit và Region đã sử dụng.
-- Mỗi chặng nên có checkpoint có thể quan sát: lệnh kiểm tra, trạng thái mong đợi, log cần xem và cách rollback.
-- Cung cấp checklist bắt buộc cho secret handling, ngân sách/cost alert và cleanup ngay từ đầu chương trình.
-- Thiết lập mốc review định kỳ ngắn để học viên trình bày tiến độ, giới hạn và rủi ro thay vì chờ đến bản cuối.
-- Khuyến khích học viên viết lại bài học bằng ngôn ngữ của mình và công khai phần chưa kiểm chứng.
+* Ghi rõ ngày cập nhật, Region và phiên bản repository của mỗi bài lab.
+* Thêm bước kiểm tra kết quả sau từng phần để học viên biết mình làm đúng hay chưa.
+* Có checklist về secret, ngân sách và cleanup ngay từ đầu.
+* Tổ chức các buổi review ngắn theo tuần để học viên nhận góp ý sớm hơn.
 
 ### Định hướng tiếp theo
 
-Tôi sẽ tiếp tục củng cố .NET, PostgreSQL, automated testing và AWS Security; xây dựng lại một phiên bản NexusOMS nhỏ hơn nhưng có tiêu chí production rõ ràng; đồng thời duy trì việc viết bài và tham gia cộng đồng để kiểm tra mức độ hiểu của chính mình.
+Tôi sẽ học thêm .NET, PostgreSQL, automated testing và AWS Security. Tôi cũng muốn làm lại NexusOMS với phạm vi nhỏ hơn, kiểm thử rõ ràng hơn và tiếp tục ghi lại những lỗi thực tế đã gặp.
 
 ### Kết luận
 
-First Cloud AI Journey giúp tôi chuyển từ tư duy “làm xong một lab” sang tư duy “chứng minh một hệ thống hoạt động đúng trong phạm vi đã nêu”. Sự chủ động, khả năng đọc bằng chứng và thói quen ghi rõ giới hạn là những giá trị tôi muốn tiếp tục giữ sau chương trình.
+Chương trình giúp tôi chuyển từ việc chỉ làm theo hướng dẫn sang tự kiểm tra kết quả và tìm nguyên nhân khi có lỗi. Đây là kinh nghiệm quan trọng nhất tôi nhận được sau kỳ thực tập.
