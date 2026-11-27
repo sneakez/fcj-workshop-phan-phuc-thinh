@@ -17,8 +17,6 @@ During my internship, I participated in two events. Each event contributed a dif
 
 &emsp;**Role:** Attendee
 
-&emsp;**How I applied it:** Focus on the real problem, evaluation criteria, and the product's demonstrable value rather than feature completion alone.
-
 ---
 
 ### [Event 2](4.2-Event2/)
@@ -29,5 +27,3 @@ During my internship, I participated in two events. Each event contributed a dif
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
 
 &emsp;**Role:** Attendee
-
-&emsp;**How I applied it:** Treat data readiness, security, cost, and operability as architecture concerns from the design stage.

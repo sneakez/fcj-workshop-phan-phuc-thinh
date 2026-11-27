@@ -10,9 +10,9 @@ chapter: false
 ### Thông tin sinh viên:
 &emsp; **Họ và tên:** Phan Phúc Thịnh
 
-&emsp; **Email:** thinhppse182396@fpt.edu.vn
-
 &emsp; **Số điện thoại:** 0914501207
+
+&emsp; **Email:** thinhppse182396@fpt.edu.vn
 
 &emsp; **Trường:** Đại học FPT
 
@@ -26,9 +26,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 14/09/2026 đến ngày 30/11/2026
 
-&emsp; **GitHub:** [github.com/sneakez](https://github.com/sneakez)
-
-<img src="/images/phan-phuc-thinh.png" alt="Ảnh chân dung Phan Phúc Thịnh" style="display: block; width: 300px; max-width: 100%; height: auto; margin: 1.5rem auto; border-radius: 0.75rem;">
+<img src="/images/phan-phuc-thinh.png" alt="Phan Phúc Thịnh" style="display: block; width: 300px; max-width: 100%; height: auto; margin: 1.5rem auto;">
 
 ### Nội dung báo cáo
 

@@ -6,26 +6,25 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-
 ### Week 2 Objectives:
 
-* Understand fundamental networking concepts in AWS (VPC).
-* Learn about Identity and Access Management (IAM) for secure cloud management.
-* Master basic web server deployment and database setup on AWS.
+* Continue learning AWS networking and migration concepts.
+* Attend the first Buildathon event.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                            | Start Date | Completion Date | Reference Material                      |
-| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | --------------------------------------- |
-| 2   | - Learn Amazon VPC core concepts: CIDR blocks, Subnets (Public/Private), Internet Gateways, and Route Tables <br> - **Practice:** Design and build a custom VPC with public and private subnets | 22/09/2026 | 22/09/2026      | https://cloudjourney.awsfcaj.com/ |
-| 3   | - Study AWS IAM fundamentals: Users, Groups, Roles, and Policies <br> - **Practice:** Create IAM users, assign least-privilege policies, and configure multi-factor authentication (MFA)        | 23/09/2026 | 23/09/2026      | https://cloudjourney.awsfcaj.com/ |
-| 4   | - Learn about Amazon Relational Database Service (RDS) <br> - **Practice:** Launch an Amazon RDS MySQL instance within the custom VPC                                                           | 24/09/2026 | 24/09/2026      | https://cloudjourney.awsfcaj.com/ |
-| 5   | - Deploy a web application (Apache/Nginx) on an EC2 instance inside the custom VPC <br> - Connect the web application to the RDS MySQL database                                                 | 25/09/2026 | 25/09/2026      | https://cloudjourney.awsfcaj.com/ |
-| 6   | - Test application connectivity and security configuration <br> - Review Week 2 learnings, clean up unused resources to manage costs, and prepare the weekly report                             | 26/09/2026 | 26/09/2026      | https://cloudjourney.awsfcaj.com/ |
+
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | Studied VPCs and subnet design. | 21/09/2026 | 21/09/2026 | [Cloud Journey](https://cloudjourney.awsfcaj.com/) |
+| 3 | Studied route tables and Internet Gateways. | 22/09/2026 | 22/09/2026 | [AWS VPC Documentation](https://docs.aws.amazon.com/vpc/) |
+| 4 | Reviewed Security Groups and basic connectivity between resources. | 23/09/2026 | 23/09/2026 | [AWS VPC Documentation](https://docs.aws.amazon.com/vpc/) |
+| 5 | Read introductory material about migration and backup on AWS. | 24/09/2026 | 24/09/2026 | [Cloud Journey](https://cloudjourney.awsfcaj.com/) |
+| 6 | Studied Windows workloads on AWS. | 25/09/2026 | 25/09/2026 | [AWS for Microsoft](https://aws.amazon.com/windows/) |
+| 7 | Attended Buildathon Kickoff: Code the Future with CMC Global and took notes about product thinking and the internal chatbot example. | 26/09/2026 | 26/09/2026 | [Event 1](../../../4-eventparticipated/4.1-event1/) |
+| Sunday | Organized notes and recorded the approach of starting with a real problem before selecting technology. | 27/09/2026 | 27/09/2026 | [Worklog](../) |
 
 ### Week 2 Achievements:
 
-* Mastered custom Amazon VPC design and setup, understanding the difference between public and private network layers.
-* Successfully implemented AWS IAM best practices, including user creation, custom policy attachment, and MFA setup.
-* Launched and configured an Amazon RDS MySQL database within a secure network environment.
-* Successfully deployed a web server on EC2 and connected it securely to the backend database.
-* Acquired resource cleanup habits to ensure cost optimization on AWS.
+* Learned the basic roles of the main VPC networking components.
+* Gained a clearer view of how to choose a Buildathon problem.
+* The week remained focused on learning and project direction rather than NexusOMS implementation.

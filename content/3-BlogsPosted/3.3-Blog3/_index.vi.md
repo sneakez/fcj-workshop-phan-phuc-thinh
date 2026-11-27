@@ -1,30 +1,42 @@
 ---
 title: "Blog 3"
-date: 2024-01-01
-weight: 1
+date: 2026-11-27
+weight: 3
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
-{{% notice warning %}}
-{{% /notice %}}
 
-# SESSION POLICIES TRONG AMAZON EKS POD IDENTITY
+# TRIỂN KHAI .NET REST API TRÊN ECS FARGATE: TỪ DOCKER IMAGE ĐẾN CONTAINER ĐANG CHẠY
 
-Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+### Giới thiệu
 
-Các điểm chính cần nắm:
+Trong NexusOMS, nhóm đóng gói .NET REST API thành Docker image và triển khai bằng Amazon ECS Fargate. Bài viết trình bày quá trình từ build image đến khi container phục vụ request, với ECS điều phối task và Fargate cung cấp tài nguyên mà nhóm không phải quản lý máy chủ EC2.
 
-* Session policy là một IAM policy inline được chỉ định khi tạo hoặc cập nhật Pod Identity association.
-* Quyền hiệu quả = intersection (giao) giữa permissions của IAM role và session policy → session policy chỉ có thể thu hẹp, không thể mở rộng quyền.
-* Giúp tránh tình trạng over-permissioning khi reuse chung một IAM role cho nhiều workloads có nhu cầu khác nhau.
-* Hỗ trợ cả same-account và cross-account (qua IAM role chaining).
-* Giảm đáng kể số lượng IAM roles cần quản lý, tránh chạm giới hạn quota IAM trong cluster lớn.
-* Cấu hình dễ dàng qua AWS Management Console, AWS CLI hoặc AWS SDK khi tạo association giữa Kubernetes ServiceAccount và IAM role.
+### Nội dung chính
 
-Tính năng này đặc biệt hữu ích khi bạn có nhiều ứng dụng chạy trên cùng một IAM role nhưng cần giới hạn quyền khác nhau (ví dụ: một pod chỉ đọc S3 bucket cụ thể, pod khác chỉ gọi một số API nhất định).
+1. **Build và push image:** GitHub Actions build backend, gắn tag theo phiên bản và đẩy image lên Amazon ECR.
+2. **Task Definition:** Pipeline đăng ký revision mới, mô tả image, CPU, memory, port, biến môi trường, secret, log và IAM role.
+3. **ECS Service:** Service cập nhật revision và duy trì số task mong muốn. Kiến trúc hai AZ cần hai task, mỗi AZ một task; bài lab mặc định dùng một task.
+4. **Networking và health check:** ALB dùng hai public subnet. Fargate chạy trong private subnet với awsvpc, network interface riêng và target group kiểu ip. ALB kiểm tra health trước khi chuyển traffic tới task mới.
+5. **Quyền và cấu hình:** Execution role phục vụ pull image, lấy secret và gửi log; task role cấp quyền SQS cho code. Secrets Manager cung cấp connection string và webhook signing secret khi task khởi tạo.
 
-...Hình ảnh...
+### Bài học rút ra
 
-...Link...
+Push image thành công chưa đồng nghĩa API đã hoạt động. Cần kiểm tra Task Definition revision, task RUNNING, target Healthy và phản hồi API; dùng CloudWatch Logs để điều tra lỗi. Khi bật circuit breaker và rollback, ECS có thể trở về deployment thành công trước đó nếu bản mới thất bại.
 
-...Hướng dẫn...
+### Nguồn tham khảo
+
+- [Task Definition cho Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-tasks-services.html)
+- [Tổng quan Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
+- [Amazon ECS Task Definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html)
+- [Tổng quan Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html)
+
+### Bài viết và minh chứng
+
+Bài viết đã được duyệt và đăng trên AWS Study Group.
+
+[Xem bài viết trên Facebook](https://www.facebook.com/groups/awsstudygroupfcj/posts/2350934632338162)
+
+**Người đăng trong nhóm:** Nguyễn Bình.
+
+![Minh chứng Blog 3 được đăng trên AWS Study Group](/images/3-Blog/blog3.png)

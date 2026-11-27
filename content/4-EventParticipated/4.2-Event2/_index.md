@@ -1,5 +1,5 @@
 ---
-title: "Event 2 - AWS Cloud Day and AI Day Hanoi - Watch Party Ho Chi Minh City"
+title: "Event 2"
 date: 2026-09-29
 weight: 2
 chapter: false
@@ -17,7 +17,7 @@ My main notes were:
 * AI should solve a specific problem and requires suitable data.
 * Access control and sensitive information must be considered before company data is used by an AI system.
 * Serverless services can reduce operational work, but cost and service limits still need to be monitored.
-* A large architecture is not always necessary; the design should match the actual scale and requirements.
+* A large architecture is not always necessary. The design should match the actual scale and requirements.
 * Business examples helped me understand the difference between a demo and a production system.
 
 ### Personal takeaway

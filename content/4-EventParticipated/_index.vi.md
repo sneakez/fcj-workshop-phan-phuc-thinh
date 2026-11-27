@@ -17,8 +17,6 @@ Trong quá trình thực tập, tôi đã tham gia 2 sự kiện. Mỗi sự ki�
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự
 
-&emsp;**Điều tôi áp dụng:** Tập trung vào bài toán thực tế, tiêu chí đánh giá và khả năng trình bày giá trị của sản phẩm thay vì chỉ hoàn thành tính năng.
-
 ---
 
 ### [Event 2](4.2-Event2/)
@@ -29,5 +27,3 @@ Trong quá trình thực tập, tôi đã tham gia 2 sự kiện. Mỗi sự ki�
 &emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự
-
-&emsp;**Điều tôi áp dụng:** Xem dữ liệu, bảo mật, chi phí và khả năng vận hành là một phần của kiến trúc ngay từ giai đoạn thiết kế.

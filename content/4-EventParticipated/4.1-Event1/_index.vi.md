@@ -1,5 +1,5 @@
 ---
-title: "Event 1 - Buildathon Kickoff: Code the Future with CMC Global"
+title: "Event 1"
 date: 2026-09-26
 weight: 1
 chapter: false
@@ -10,7 +10,7 @@ pre: " <b> 4.1. </b> "
 
 ### Nội dung tôi ghi nhận
 
-Đây là buổi giới thiệu chương trình Buildathon, thể lệ tham gia và tiêu chí đánh giá. Phần chia sẻ của anh Hùng Gia giúp tôi hiểu rằng làm lab chỉ là bước đầu; khi thực hiện dự án cần giải thích được bài toán, cách thiết kế và lý do chọn giải pháp.
+Đây là buổi giới thiệu chương trình Buildathon, thể lệ tham gia và tiêu chí đánh giá. Phần chia sẻ của anh Hùng Gia giúp tôi hiểu rằng làm lab chỉ là bước đầu. Khi thực hiện dự án, tôi còn phải giải thích được bài toán, cách thiết kế và lý do chọn giải pháp.
 
 Tôi chú ý nhất đến phần chia sẻ của anh Trương Bùi về chatbot nội bộ tại CMC Global. Do đội Business ở Úc và đội kỹ thuật tại Việt Nam lệch múi giờ, chatbot được dùng để tiếp nhận vấn đề, hỏi thêm thông tin và chuyển nội dung rõ ràng hơn cho đội phát triển. Ví dụ này cho tôi thấy AI có thể hỗ trợ một công việc cụ thể trong doanh nghiệp, thay vì chỉ dùng để hỏi đáp chung.
 

@@ -6,23 +6,20 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
+### Giới thiệu
 
-### Giới thiệu chung
+Worklog này ghi lại những nội dung tôi đã học theo lộ trình FCAJ và các công việc đã làm với NexusOMS cho đến lúc hoàn thành báo cáo và nộp Workshop.
 
-Mục này ghi chép lại toàn bộ tiến độ công việc hàng ngày, kiến thức thu hoạch và kết quả thực hành trong suốt chương trình thực tập **First Cloud AI Journey (FCAJ)** và **FCJ Buildrathon**. Nhật ký được tổng hợp theo từng tuần từ ngày 14/09/2026 đến hạn nộp ngày 30/11/2026.
+### Tóm tắt theo tuần
 
----
-
-### Tóm tắt Tiến độ hàng tuần
-
-* **Tuần 1:** [Kiến thức nền tảng AWS, Khởi tạo Tài khoản & Dịch vụ cốt lõi (EC2, S3, IAM, CLI)](1.1-week1/)
-* **Tuần 2:** [Nâng cao Năng lực Mạng, Workload Windows, Phân tích Kiến trúc & Buildrathon Kick-off](1.2-week2/)
-* **Tuần 3:** [Phục hồi sau thảm họa & Dịch chuyển Hạ tầng (AWS EDR & VM Import/Export)](1.3-week3/)
-* **Tuần 4:** [Tối ưu Chi phí, Container & CI/CD, Kiến trúc Microservices & Website bán sách Serverless](1.4-week4/)
-* **Tuần 5:** [Hệ thống Quản lý Tài liệu Serverless, Hoàn thành Lộ trình Lab & Lên Kế hoạch dự án NexusOMS](1.5-week5/)
-* **Tuần 6:** [Nền tảng Backend .NET, Thiết kế Cơ sở dữ liệu & API cho NexusOMS](1.6-week6/)
-* **Tuần 7:** [Kế hoạch NexusOMS v4.0, Schema Database chuẩn & Frontend MVP cùng Prototype Supabase](1.7-week7/)
-* **Tuần 8:** [MVP NexusOMS: Backend .NET, Luồng đơn hàng–tồn kho & Frontend sẵn sàng demo](1.8-week8/)
-* **Tuần 9:** [Triển khai AWS với ECS Fargate, S3 & CloudFront, CI/CD với GitHub Actions & OIDC và Tài liệu Workshop](1.9-week9/)
-* **Tuần 10:** [Xử lý webhook bất đồng bộ với SQS, hoàn thiện Workshop AWS và báo cáo chương trình](1.10-week10/)
-* **Tuần 11:** [Rà soát triển khai, dọn dẹp tài nguyên AWS, xây dựng learning pack và chia sẻ kiến thức cộng đồng](1.11-week11/)
+* **Tuần 1:** [Làm quen chương trình và ôn kiến thức AWS cơ bản](1.1-week1/)
+* **Tuần 2:** [Mạng AWS, khái niệm migration và Buildathon Kickoff](1.2-week2/)
+* **Tuần 3:** [Automation, monitoring, security và AWS Cloud Day](1.3-week3/)
+* **Tuần 4:** [Chi phí, container, CI/CD và serverless](1.4-week4/)
+* **Tuần 5:** [Chuỗi bài thực hành serverless và định hướng NexusOMS](1.5-week5/)
+* **Tuần 6:** [Ôn C#/.NET và chuẩn bị requirement, ERD, API](1.6-week6/)
+* **Tuần 7:** [Hoàn thiện prototype frontend và tài liệu NexusOMS](1.7-week7/)
+* **Tuần 8:** [Backend, luồng đơn hàng - tồn kho và tích hợp frontend](1.8-week8/)
+* **Tuần 9:** [Tích hợp thay đổi chung và rà soát triển khai AWS](1.9-week9/)
+* **Tuần 10:** [SQS, GitHub OIDC và workflow CI/CD](1.10-week10/)
+* **Tuần 11:** [Rà soát và triển khai báo cáo thực tập](1.11-week11/)
